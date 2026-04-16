@@ -135,9 +135,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Label
       objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bcffcfebb158b404b856a12bfce8e1e3, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5513b2fd11a7ee45880b1ec619ea3de, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
     - target: {fileID: 8765959909228515714, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: ContinueButton
       objectReference: {fileID: 0}
     - target: {fileID: 8841667915308058046, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Pivot.x
@@ -257,6 +277,17 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &232966520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+  m_PrefabInstance: {fileID: 232966516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232966518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &485591120
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +611,7 @@ GameObject:
   - component: {fileID: 1437834109}
   - component: {fileID: 1437834111}
   - component: {fileID: 1437834110}
+  - component: {fileID: 1437834112}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -647,6 +679,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437834108}
   m_CullTransparentMesh: 1
+--- !u!114 &1437834112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437834108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662c627ae5c950b4981455436736aab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartWindow
+  firstSelected: {fileID: 232966518}
+  continueButton: {fileID: 232966520}
+  startButton: {fileID: 1891178795}
+  optionButton: {fileID: 1840090979}
+  canContinue: 1
 --- !u!1 &1484177511
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,9 +959,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Label
       objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bcffcfebb158b404b856a12bfce8e1e3, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5513b2fd11a7ee45880b1ec619ea3de, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
     - target: {fileID: 8765959909228515714, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Name
-      value: Button_2
+      value: OptionButton
       objectReference: {fileID: 0}
     - target: {fileID: 8841667915308058046, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Pivot.x
@@ -1032,6 +1101,17 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &1840090979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+  m_PrefabInstance: {fileID: 1840090975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840090977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &1891178791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,9 +1128,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Label
       objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bcffcfebb158b404b856a12bfce8e1e3, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5513b2fd11a7ee45880b1ec619ea3de, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
+    - target: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 938c54589d5b73d45b184cc86f707f28, type: 3}
     - target: {fileID: 8765959909228515714, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Name
-      value: Button_1
+      value: StartButton
       objectReference: {fileID: 0}
     - target: {fileID: 8841667915308058046, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
       propertyPath: m_Pivot.x
@@ -1170,6 +1270,17 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &1891178795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8301953441440742214, guid: 59f38f1b058b4bf4ca9ceb9de17a08f0, type: 3}
+  m_PrefabInstance: {fileID: 1891178791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891178793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &2049021884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1293,7 @@ GameObject:
   - component: {fileID: 2049021887}
   - component: {fileID: 2049021886}
   - component: {fileID: 2049021885}
+  - component: {fileID: 2049021889}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1272,6 +1384,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2049021889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049021884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed3ab3f33615b5458224a48a17401e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowManager
+  windows:
+  - {fileID: 1437834112}
+  currentWindowId: 0
+  defaultWindowId: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
