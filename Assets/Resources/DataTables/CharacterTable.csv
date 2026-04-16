@@ -1,0 +1,5 @@
+﻿Id,Name,Desc,Attack,Deffense,Icon
+Character1,Warrior,WarriorDesc,10,10,Icon_Sword01
+Character2,Thief,ThiefDesc,15,5,Icon_Sword03
+Character3,Tanker,TankerDesc,5,15,Icon_Shield01
+

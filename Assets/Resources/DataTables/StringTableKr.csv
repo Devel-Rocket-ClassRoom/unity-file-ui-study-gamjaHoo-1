@@ -1,0 +1,20 @@
+﻿Id,String
+HELLO,안녕
+BYE,잘가
+YOU DIE,너 죽음
+Item1Name,검
+Item2Name,방패
+Item3Name,활 
+Item4Name,물약 
+Item1Desc,이것은 검이다.
+Item2Desc,이것은 방패다.
+Item3Desc,이것은 활이다.
+Item4Desc,이것은 물약이다.
+Warrior,전사
+Thief,도적
+Tanker,탱커
+WarriorDesc,무난한 전사다.
+ThiefDesc,공격력이 높은 도적이다.
+TankerDesc,방어력이 높은 탱커다.
+Attack,공격력
+Deffense,방어력

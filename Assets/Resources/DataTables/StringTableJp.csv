@@ -1,0 +1,21 @@
+﻿Id,String
+,
+HELLO,やあ
+BYE,じゃあな
+YOU DIE,あなたは死ぬ
+Item1Name,剣
+Item2Name,盾
+Item3Name,弓
+Item4Name,ポーション
+Item1Desc,これは剣だ。
+Item2Desc,これは盾だ。
+Item3Desc,これは弓だ。
+Item4Desc,これはポーションだ。
+Warrior,せんし
+Thief,とうぞく
+Tanker,タンカー
+WarriorDesc,せんしです
+ThiefDesc,とうぞくです
+TankerDesc,タンカーです
+Attack,こうげき
+Deffense,ぼうえい
