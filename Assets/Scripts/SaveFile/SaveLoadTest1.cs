@@ -13,7 +13,7 @@ public class SaveLoadTest1 : MonoBehaviour
         // 1: 저장
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            var data = new SaveDataV3();
+            var data = new SaveDataV4();
             data.Name = "TEST1234";
             data.Gold = 4321;
 
@@ -23,12 +23,14 @@ public class SaveLoadTest1 : MonoBehaviour
             for (int i = 0; i < count; i++)
             {
                 var randomItem = allItems[Random.Range(0, allItems.Count)];
-                data.ItemIds.Add(randomItem.Id);
+                var itemData = new SaveItemData();
+                itemData.ItemData = randomItem;
+                data.itemList.Add(itemData);
             }
 
             SaveLoadManager.Data = data;
             SaveLoadManager.Save();
-            Debug.Log($"저장 완료 - Name: {data.Name}, Gold: {data.Gold}, 아이템 {data.ItemIds.Count}개");
+            Debug.Log($"저장 완료 - Name: {data.Name}, Gold: {data.Gold}, 아이템 {data.itemList.Count}개");
         }
 
         // 2: 불러오기
@@ -36,13 +38,14 @@ public class SaveLoadTest1 : MonoBehaviour
         {
             if (SaveLoadManager.Load())
             {
-                var data = SaveLoadManager.Data;
-                Debug.Log($"Name: {data.Name}, Gold: {data.Gold}");
+                Debug.Log(SaveLoadManager.Data.Name);
+                Debug.Log(SaveLoadManager.Data.Gold);
 
-                foreach (var id in data.ItemIds)
+                foreach (var saveItemData in SaveLoadManager.Data.itemList)
                 {
-                    var item = DataTableManager.ItemTable.Get(id);
-                    Debug.Log($"아이템: {id} ({item?.StringName ?? "알 수 없음"})");
+                    Debug.Log(saveItemData.InstanceId);
+                    Debug.Log(saveItemData.ItemData.StringName);
+                    Debug.Log(saveItemData.CreationTime);
                 }
             }
             else
