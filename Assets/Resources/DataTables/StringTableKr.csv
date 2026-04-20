@@ -18,3 +18,11 @@ ThiefDesc,공격력이 높은 도적이다.
 TankerDesc,방어력이 높은 탱커다.
 Attack,공격력
 Deffense,방어력
+NAME, 이름
+DESC, 설명
+TYPE, 타입
+VALUE, 밸류
+COST, 코스트
+WEAPON, 무기
+EQUIP, 장비
+CONSUMABLE, 소모품

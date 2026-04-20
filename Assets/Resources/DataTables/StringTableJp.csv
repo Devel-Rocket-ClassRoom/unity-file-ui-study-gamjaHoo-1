@@ -19,3 +19,11 @@ ThiefDesc,とうぞくです
 TankerDesc,タンカーです
 Attack,こうげき
 Deffense,ぼうえい
+NAME, 名前
+DESC, 説明
+TYPE, タイプ
+VALUE, 価値
+COST, コスト
+WEAPON, 武器
+EQUIP, 装備
+CONSUMABLE, 消耗品

@@ -11,6 +11,13 @@ public class SaveItemData
     public ItemData ItemData { get; set; }
 
     public DateTime CreationTime {  get; set; }
+
+    public static SaveItemData GetRandomItem()
+    {
+        SaveItemData newItem = new SaveItemData();
+        newItem.ItemData = DataTableManager.ItemTable.GetRandom();
+        return newItem;
+    }
     
     public SaveItemData()
     {

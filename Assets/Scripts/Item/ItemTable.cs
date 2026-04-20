@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ItemData
@@ -28,6 +29,8 @@ public class ItemTable : DataTable
 {
     private readonly Dictionary<string, ItemData> itemTable =
         new Dictionary<string, ItemData>();
+
+    private List<string> keyList;
     public override void Load(string filename)
     {
         itemTable.Clear();
@@ -47,6 +50,7 @@ public class ItemTable : DataTable
                 Debug.LogError("아이템 아이디 중복");
             }
         }
+        keyList = itemTable.Keys.ToList();
     }
 
     public ItemData Get(string id)
@@ -57,6 +61,10 @@ public class ItemTable : DataTable
             return null;
         }
         return itemTable[id];
+    }
+    public ItemData GetRandom()
+    {
+        return Get(keyList[Random.Range(0, keyList.Count)]);
     }
 
     //  랜덤 선택 시 활용하기 위한 전체 아이템 목록 반환

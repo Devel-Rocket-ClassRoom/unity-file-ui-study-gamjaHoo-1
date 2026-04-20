@@ -19,3 +19,11 @@ ThiefDesc,High Attack Thief
 TankerDesc,High defense tanker
 Attack,Attack
 Deffense,Deffense
+NAME, Name
+DESC, Description
+TYPE, Type
+VALUE, Value
+COST, Cost
+WEAPON, Weapon
+EQUIP, Equipment
+CONSUMABLE, Consumable
