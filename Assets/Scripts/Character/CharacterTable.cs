@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,6 +12,9 @@ public class CharacterTable : DataTable
 {
     private readonly Dictionary<string, CharacterData> characterTable =
         new Dictionary<string, CharacterData>();
+
+    private List<string> keyList;
+
     public override void Load(string filename)
     {
         characterTable.Clear();
@@ -30,6 +34,7 @@ public class CharacterTable : DataTable
                 Debug.LogError("캐릭터 키 중복");
             }
         }
+        keyList = characterTable.Keys.ToList();
     }
 
     public CharacterData Get(string id)
@@ -40,5 +45,10 @@ public class CharacterTable : DataTable
             return null;
         }
         return characterTable[id];
+    }
+
+    public CharacterData GetRandom()
+    {
+        return Get(keyList[UnityEngine.Random.Range(0, keyList.Count)]);
     }
 }

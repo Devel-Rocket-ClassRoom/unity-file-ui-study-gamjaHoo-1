@@ -23,6 +23,19 @@ DESC, 설명
 TYPE, 타입
 VALUE, 밸류
 COST, 코스트
+FILTER_NONE, 없음
 WEAPON, 무기
 EQUIP, 장비
 CONSUMABLE, 소모품
+SORT_TIME_ASC, 날짜(오름차순)
+SORT_TIME_DESC, 날짜(내림차순)
+SORT_NAME_ASC, 이름(오름차순)
+SORT_NAME_DESC, 이름(내림차순)
+SORT_COST_ASC, 가격(오름차순)
+SORT_COST_DESC, 가격(내림차순)
+FILTER_NOT_CONSUMABLE, 소모품 아님
+LOAD, 불러오기
+SAVE, 저장하기
+CREATE, 생성
+DELETE, 삭제
+EMPTY_SLOT, 비어있음

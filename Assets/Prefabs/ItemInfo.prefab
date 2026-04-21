@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 4377333490046961683}
   - component: {fileID: 8745354504950509474}
   - component: {fileID: 1863248294677147211}
+  - component: {fileID: 624588163856941430}
   m_Layer: 5
   m_Name: ItemInfo
   m_TagString: Untagged
@@ -754,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -797,6 +798,24 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &624588163856941430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6322621073643558846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20367f8982199a4f90dbb0893724238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIItemInfo
+  imageIcon: {fileID: 211803149135437921}
+  textName: {fileID: 2975986651541574605}
+  textDescription: {fileID: 2406736193545241033}
+  textType: {fileID: 8998469599687599899}
+  textValue: {fileID: 8396802190463792331}
+  textCost: {fileID: 7144439777599566096}
 --- !u!1 &6467137314323509839
 GameObject:
   m_ObjectHideFlags: 0

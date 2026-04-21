@@ -79,6 +79,8 @@ public class DifficultyWindow : GenericWindow
     private int LoadDifficulty()
     {
         if (!File.Exists(savePath))
+
+
         {
             return DefaultDifficulty;
         }

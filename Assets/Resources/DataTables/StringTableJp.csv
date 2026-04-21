@@ -1,15 +1,15 @@
-﻿Id,String
+Id,String
 ,
 HELLO,やあ
 BYE,じゃあな
-YOU DIE,あなたは死ぬ
-Item1Name,剣
-Item2Name,盾
-Item3Name,弓
+YOU DIE,あなたはしぬ
+Item1Name,けん
+Item2Name,たて
+Item3Name,ゆみ
 Item4Name,ポーション
-Item1Desc,これは剣だ。
-Item2Desc,これは盾だ。
-Item3Desc,これは弓だ。
+Item1Desc,これはけんだ。
+Item2Desc,これはたてだ。
+Item3Desc,これはゆみだ。
 Item4Desc,これはポーションだ。
 Warrior,せんし
 Thief,とうぞく
@@ -19,11 +19,24 @@ ThiefDesc,とうぞくです
 TankerDesc,タンカーです
 Attack,こうげき
 Deffense,ぼうえい
-NAME, 名前
-DESC, 説明
+NAME, なまえ
+DESC, せつめい
 TYPE, タイプ
-VALUE, 価値
+VALUE, かち
 COST, コスト
-WEAPON, 武器
-EQUIP, 装備
-CONSUMABLE, 消耗品
+FILTER_NONE, なし
+WEAPON, ぶき
+EQUIP, そうび
+CONSUMABLE, しょうもうひん
+SORT_TIME_ASC, ひづけ(しょうじゅん)
+SORT_TIME_DESC, ひづけ(こうじゅん)
+SORT_NAME_ASC, なまえ(しょうじゅん)
+SORT_NAME_DESC, なまえ(こうじゅん)
+SORT_COST_ASC, かかく(しょうじゅん)
+SORT_COST_DESC, かかく(こうじゅん)
+FILTER_NOT_CONSUMABLE, ひしょうもうひん
+LOAD, よみこむ
+SAVE, ほぞん
+CREATE, さくせい
+DELETE, さくじょ
+EMPTY_SLOT, あきスロット

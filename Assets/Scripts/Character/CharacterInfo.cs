@@ -42,6 +42,11 @@ public class CharacterInfo : MonoBehaviour
         SetCharacterData(data);
     }
 
+    public void SetCharacterData(SaveCharacterData saveCharacterData)
+    {
+        SetCharacterData(saveCharacterData.CharacterData);
+    }
+
     public void SetCharacterData(CharacterData data)
     {
         icon.sprite = data.SpriteIcon;

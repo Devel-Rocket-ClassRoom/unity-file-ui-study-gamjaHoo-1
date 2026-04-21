@@ -78,12 +78,17 @@ public class SaveDataV3 : SaveDataV2
 public class SaveDataV4 : SaveDataV2
 {
     public List<SaveItemData> itemList = new List<SaveItemData>();
+    public List<SaveCharacterData> characterList = new List<SaveCharacterData>();
+
     string[] ids = { "Item1", "Item2", "Item3", "Item4" };
 
+    public int Sorting { get; set; } = 0;
+    public int Filtering { get; set; } = 0;
+    public int CharacterSorting { get; set; } = 0;
+    public int CharacterFiltering { get; set; } = 0;
 
     public SaveDataV4()
     {
         Version = 4;
-
     }
 }

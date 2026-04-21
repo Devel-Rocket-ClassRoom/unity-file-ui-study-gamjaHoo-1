@@ -31,6 +31,14 @@ public static class SaveLoadManager
 
     public static SaveDataVC Data { get; set; } = new SaveDataVC();
 
+    static SaveLoadManager()
+    {
+        if (!Load())
+        {
+            Debug.LogError("세이브파일 로드 실패!");
+        }
+    }
+
     private static JsonSerializerSettings settings = new JsonSerializerSettings()
     {
         Formatting = Formatting.Indented,
@@ -62,7 +70,7 @@ public static class SaveLoadManager
     public static bool Load(int slot = 0)
     {
         string path = Path.Combine(SaveDirectory, GetFileName(slot));
-        if (!File.Exists(path)) return false;
+        if (!File.Exists(path)) return Save();
 
         try
         {

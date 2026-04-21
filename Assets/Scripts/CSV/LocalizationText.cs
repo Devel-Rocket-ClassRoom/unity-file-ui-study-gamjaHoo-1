@@ -11,21 +11,21 @@ public class LocalizationText : MonoBehaviour
         Localizing(Languages.Korean);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Keypad1))
-        {
-            Localizing(Languages.Korean);
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            Localizing(Languages.English);
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad3))
-        {
-            Localizing(Languages.Japanese);
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Keypad1))
+    //    {
+    //        Localizing(Languages.Korean);
+    //    }
+    //    if (Input.GetKeyDown(KeyCode.Keypad2))
+    //    {
+    //        Localizing(Languages.English);
+    //    }
+    //    if (Input.GetKeyDown(KeyCode.Keypad3))
+    //    {
+    //        Localizing(Languages.Japanese);
+    //    }
+    //}
 
     private void Localizing(Languages language)
     {
