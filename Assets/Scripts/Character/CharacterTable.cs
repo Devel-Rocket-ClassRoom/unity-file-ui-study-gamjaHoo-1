@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 // 1. CSV 파일 (ID / 이름 / 설명 / 공격력.../ 초상화(아이콘)...)
